@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance - Trackies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Trackies</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vehicles.html" class="nav-link">Vehicles</a>
+                <a href="finance.html" class="nav-link active">Finance</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="tradein.html" class="nav-link">Trade-In</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Finance Options</h1>
+            <p>Flexible finance solutions for everyone</p>
+        </div>
+    </section>
+
+    <!-- Finance Options -->
+    <section class="finance-options">
+        <div class="container">
+            <div class="finance-grid">
+                <div class="finance-card">
+                    <div class="finance-icon">💳</div>
+                    <h3>Bad Credit Finance</h3>
+                    <p>Don't let bad credit stop you from getting the car you need. We work with lenders who specialize in helping people with credit challenges.</p>
+                    <ul>
+                        <li>No credit check required</li>
+                        <li>Fast approval process</li>
+                        <li>Flexible payment terms</li>
+                    </ul>
+                </div>
+                <div class="finance-card">
+                    <div class="finance-icon">🏛️</div>
+                    <h3>Centrelink Finance</h3>
+                    <p>Receiving Centrelink payments? No problem! We have finance options specifically designed for Centrelink recipients.</p>
+                    <ul>
+                        <li>Centrelink income accepted</li>
+                        <li>Low deposit options</li>
+                        <li>Weekly payment plans</li>
+                    </ul>
+                </div>
+                <div class="finance-card">
+                    <div class="finance-icon">💼</div>
+                    <h3>ABN Finance</h3>
+                    <p>Self-employed or have an ABN? We understand your unique financial situation and have tailored solutions for you.</p>
+                    <ul>
+                        <li>ABN holders welcome</li>
+                        <li>Flexible income verification</li>
+                        <li>Quick approval process</li>
+                    </ul>
+                </div>
+                <div class="finance-card">
+                    <div class="finance-icon">🏠</div>
+                    <h3>Rent-to-Own</h3>
+                    <p>Start driving today with our rent-to-own program. Make weekly payments and own the car at the end of the term.</p>
+                    <ul>
+                        <li>Drive today, own tomorrow</li>
+                        <li>No large upfront payment</li>
+                        <li>Ownership at term end</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="finance-benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Finance?</h2>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Quick Approval</h3>
+                    <p>Get approved in as little as 10 minutes</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">💯</div>
+                    <h3>100% Approval Rate</h3>
+                    <p>We find a solution for everyone</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">📱</div>
+                    <h3>Online Application</h3>
+                    <p>Apply from the comfort of your home</p>
+                </div>
+                <div class="benefit">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Secure Process</h3>
+                    <p>Your information is safe and secure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Finance Application Form -->
+    <section class="finance-application">
+        <div class="container">
+            <div class="form-container">
+                <h2>Apply for Finance</h2>
+                <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                
+                <form class="finance-form" id="finance-form">
+                    <div class="form-section">
+                        <h3>Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address *</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Employment Information</h3>
+                        <div class="form-group">
+                            <label for="employment">Employment Status *</label>
+                            <select id="employment" name="employment" required>
+                                <option value="">Select Employment Status</option>
+                                <option value="full-time">Full-time Employment</option>
+                                <option value="part-time">Part-time Employment</option>
+                                <option value="casual">Casual Employment</option>
+                                <option value="self-employed">Self-employed/ABN</option>
+                                <option value="centrelink">Centrelink</option>
+                                <option value="pension">Pension</option>
+                                <option value="unemployed">Unemployed</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="income">Weekly Income *</label>
+                                <input type="number" id="income" name="income" placeholder="$" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="employer">Employer/Income Source</label>
+                                <input type="text" id="employer" name="employer">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Vehicle Interest</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="vehicleType">Vehicle Type</label>
+                                <select id="vehicleType" name="vehicleType">
+                                    <option value="">Any Vehicle Type</option>
+                                    <option value="sedan">Sedan</option>
+                                    <option value="hatchback">Hatchback</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="ute">Ute</option>
+                                    <option value="wagon">Wagon</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Weekly Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select Budget</option>
+                                    <option value="50">Under $50/week</option>
+                                    <option value="75">$50-75/week</option>
+                                    <option value="100">$75-100/week</option>
+                                    <option value="150">$100-150/week</option>
+                                    <option value="200">$150+/week</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="specificVehicle">Specific Vehicle Interest</label>
+                            <input type="text" id="specificVehicle" name="specificVehicle" placeholder="e.g., 2020 Toyota Camry">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-group">
+                            <label for="creditHistory">Credit History</label>
+                            <select id="creditHistory" name="creditHistory">
+                                <option value="">Select Credit History</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                                <option value="poor">Poor</option>
+                                <option value="no-credit">No Credit History</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Additional Comments</label>
+                            <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your specific needs or circumstances..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Submit Application</button>
+                        <p class="form-note">* Required fields. Your information is secure and confidential.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How quickly can I get approved?</h3>
+                    <p>Most applications are processed within 10-30 minutes. We'll contact you as soon as we have an answer.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What documents do I need?</h3>
+                    <p>You'll need ID, proof of income, and bank statements. We'll let you know exactly what's required after your application.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I get finance with bad credit?</h3>
+                    <p>Yes! We specialize in helping people with all types of credit situations. Bad credit is not a problem.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you accept Centrelink income?</h3>
+                    <p>Absolutely. Centrelink payments are accepted as valid income for our finance options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Trackies</h3>
+                    <p>Your trusted car dealership for quality vehicles and flexible finance options.</p>
+                    <p><strong>License #:</strong> MD12345</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="vehicles.html">Vehicles</a></li>
+                        <li><a href="finance.html">Finance</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trackies. All rights reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

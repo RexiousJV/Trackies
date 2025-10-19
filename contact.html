@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Trackies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Trackies</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vehicles.html" class="nav-link">Vehicles</a>
+                <a href="finance.html" class="nav-link">Finance</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="tradein.html" class="nav-link">Trade-In</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our friendly team</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Main Showroom</h3>
+                    <p><strong>Address:</strong><br>
+                    123 Main Street<br>
+                    Sydney NSW 2000</p>
+                    <p><strong>Hours:</strong><br>
+                    Mon-Fri: 9:00 AM - 6:00 PM<br>
+                    Saturday: 9:00 AM - 4:00 PM<br>
+                    Sunday: 10:00 AM - 3:00 PM</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Service Center</h3>
+                    <p><strong>Address:</strong><br>
+                    456 Service Road<br>
+                    Sydney NSW 2001</p>
+                    <p><strong>Hours:</strong><br>
+                    Mon-Fri: 8:00 AM - 5:00 PM<br>
+                    Saturday: 8:00 AM - 2:00 PM<br>
+                    Sunday: Closed</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone Numbers</h3>
+                    <p><strong>Sales:</strong><br>
+                    (02) 1234 5678</p>
+                    <p><strong>Service:</strong><br>
+                    (02) 1234 5679</p>
+                    <p><strong>Finance:</strong><br>
+                    (02) 1234 5680</p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email Addresses</h3>
+                    <p><strong>General Enquiries:</strong><br>
+                    info@trackies.com.au</p>
+                    <p><strong>Sales:</strong><br>
+                    sales@trackies.com.au</p>
+                    <p><strong>Service:</strong><br>
+                    service@trackies.com.au</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Send Us a Message</h2>
+                <p>Have a question or need assistance? Fill out the form below and we'll get back to you soon.</p>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select Subject</option>
+                            <option value="general">General Enquiry</option>
+                            <option value="vehicle">Vehicle Enquiry</option>
+                            <option value="finance">Finance Application</option>
+                            <option value="service">Service Booking</option>
+                            <option value="tradein">Trade-In Valuation</option>
+                            <option value="complaint">Complaint</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Please provide details about your enquiry..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span class="checkmark"></span>
+                            Subscribe to our newsletter for updates and special offers
+                        </label>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                        <p class="form-note">* Required fields. We'll respond within 24 hours.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps Section -->
+    <section class="maps-section">
+        <div class="container">
+            <h2 class="section-title">Our Locations</h2>
+            
+            <div class="locations-grid">
+                <div class="location-item">
+                    <h3>Main Showroom</h3>
+                    <p>123 Main Street, Sydney NSW 2000</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.2543!2d151.2093!3d-33.8688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUyJzA4LjAiUyAxNTHCsDEyJzMzLjQiRQ!5e0!3m2!1sen!2sau!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="location-item">
+                    <h3>Service Center</h3>
+                    <p>456 Service Road, Sydney NSW 2001</p>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.2543!2d151.2093!3d-33.8688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDUyJzA4LjAiUyAxNTHCsDEyJzMzLjQiRQ!5e0!3m2!1sen!2sau!4v1234567891" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <h2 class="section-title">Follow Us</h2>
+            <p>Stay connected with Trackies on social media for the latest updates, new arrivals, and special offers.</p>
+            
+            <div class="social-grid">
+                <a href="#" class="social-card">
+                    <div class="social-icon">📘</div>
+                    <h3>Facebook</h3>
+                    <p>Follow us for daily updates and customer stories</p>
+                    <span class="social-handle">@TrackiesCars</span>
+                </a>
+                
+                <a href="#" class="social-card">
+                    <div class="social-icon">📷</div>
+                    <h3>Instagram</h3>
+                    <p>See our latest vehicle arrivals and behind-the-scenes content</p>
+                    <span class="social-handle">@trackies_cars</span>
+                </a>
+                
+                <a href="#" class="social-card">
+                    <div class="social-icon">🐦</div>
+                    <h3>Twitter</h3>
+                    <p>Get real-time updates and customer service</p>
+                    <span class="social-handle">@TrackiesCars</span>
+                </a>
+                
+                <a href="#" class="social-card">
+                    <div class="social-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>Connect with us professionally</p>
+                    <span class="social-handle">Trackies Car Dealership</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What are your opening hours?</h3>
+                    <p>Our showroom is open Mon-Fri 9AM-6PM, Saturday 9AM-4PM, and Sunday 10AM-3PM. Service center hours are Mon-Fri 8AM-5PM, Saturday 8AM-2PM.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer test drives?</h3>
+                    <p>Yes! We encourage test drives for all our vehicles. Just bring your valid driver's license and we'll get you behind the wheel.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What finance options do you have?</h3>
+                    <p>We offer various finance options including traditional car loans, rent-to-own, and finance for bad credit or Centrelink recipients.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you provide warranties?</h3>
+                    <p>Yes, all our vehicles come with comprehensive warranties. The length and coverage depend on the vehicle age and condition.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I trade in my current vehicle?</h3>
+                    <p>Absolutely! We accept trade-ins on all makes and models. Get a free valuation using our online form or visit our showroom.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you service all makes and models?</h3>
+                    <p>Our service center can handle most makes and models. Contact us to confirm we can service your specific vehicle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contact -->
+    <section class="emergency-contact">
+        <div class="container">
+            <div class="emergency-banner">
+                <h3>🚨 Emergency Breakdown Service</h3>
+                <p>Need immediate roadside assistance? Call our 24/7 emergency line:</p>
+                <a href="tel:0412345678" class="emergency-phone">(04) 1234 5678</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Trackies</h3>
+                    <p>Your trusted car dealership for quality vehicles and flexible finance options.</p>
+                    <p><strong>License #:</strong> MD12345</p>
+                    <p><strong>ABN:</strong> 12 345 678 901</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="vehicles.html">Vehicles</a></li>
+                        <li><a href="finance.html">Finance</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="finance.html">Car Finance</a></li>
+                        <li><a href="tradein.html">Trade-In</a></li>
+                        <li><a href="service.html">Car Servicing</a></li>
+                        <li><a href="#">Roadworthy Certificates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trackies. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Sitemap</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
