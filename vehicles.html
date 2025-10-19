@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles - Trackies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Trackies</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vehicles.html" class="nav-link active">Vehicles</a>
+                <a href="finance.html" class="nav-link">Finance</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="tradein.html" class="nav-link">Trade-In</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Vehicles</h1>
+            <p>Find your perfect car from our quality selection</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="make">Make</label>
+                    <select id="make" name="make">
+                        <option value="">All Makes</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="honda">Honda</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="ford">Ford</option>
+                        <option value="holden">Holden</option>
+                        <option value="nissan">Nissan</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="model">Model</label>
+                    <select id="model" name="model">
+                        <option value="">All Models</option>
+                        <option value="camry">Camry</option>
+                        <option value="civic">Civic</option>
+                        <option value="cx5">CX-5</option>
+                        <option value="focus">Focus</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="year">Year</label>
+                    <select id="year" name="year">
+                        <option value="">All Years</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Max Weekly Price</label>
+                    <select id="price" name="price">
+                        <option value="">Any Price</option>
+                        <option value="50">Under $50/week</option>
+                        <option value="75">Under $75/week</option>
+                        <option value="100">Under $100/week</option>
+                        <option value="150">Under $150/week</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary filter-btn">Filter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicles Grid -->
+    <section class="vehicles-grid">
+        <div class="container">
+            <div class="vehicles-container">
+                <!-- Vehicle Card 1 -->
+                <div class="vehicle-card-large">
+                    <div class="vehicle-image">
+                        <div class="placeholder-image">2021 Toyota Camry</div>
+                        <div class="vehicle-badge">Featured</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2021 Toyota Camry Hybrid</h3>
+                        <div class="vehicle-specs">
+                            <span>Automatic</span>
+                            <span>Hybrid</span>
+                            <span>45,000 km</span>
+                        </div>
+                        <div class="vehicle-pricing">
+                            <span class="weekly-price">From $95/week</span>
+                            <span class="total-price">$28,500</span>
+                        </div>
+                        <button class="btn btn-primary">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 2 -->
+                <div class="vehicle-card-large">
+                    <div class="vehicle-image">
+                        <div class="placeholder-image">2020 Honda Civic</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2020 Honda Civic Sport</h3>
+                        <div class="vehicle-specs">
+                            <span>Manual</span>
+                            <span>Petrol</span>
+                            <span>32,000 km</span>
+                        </div>
+                        <div class="vehicle-pricing">
+                            <span class="weekly-price">From $85/week</span>
+                            <span class="total-price">$25,900</span>
+                        </div>
+                        <button class="btn btn-primary">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 3 -->
+                <div class="vehicle-card-large">
+                    <div class="vehicle-image">
+                        <div class="placeholder-image">2022 Mazda CX-5</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2022 Mazda CX-5 Touring</h3>
+                        <div class="vehicle-specs">
+                            <span>Automatic</span>
+                            <span>Petrol</span>
+                            <span>18,000 km</span>
+                        </div>
+                        <div class="vehicle-pricing">
+                            <span class="weekly-price">From $135/week</span>
+                            <span class="total-price">$42,500</span>
+                        </div>
+                        <button class="btn btn-primary">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 4 -->
+                <div class="vehicle-card-large">
+                    <div class="vehicle-image">
+                        <div class="placeholder-image">2019 Ford Focus</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2019 Ford Focus Titanium</h3>
+                        <div class="vehicle-specs">
+                            <span>Automatic</span>
+                            <span>Petrol</span>
+                            <span>55,000 km</span>
+                        </div>
+                        <div class="vehicle-pricing">
+                            <span class="weekly-price">From $65/week</span>
+                            <span class="total-price">$19,500</span>
+                        </div>
+                        <button class="btn btn-primary">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 5 -->
+                <div class="vehicle-card-large">
+                    <div class="vehicle-image">
+                        <div class="placeholder-image">2020 Nissan X-Trail</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2020 Nissan X-Trail ST</h3>
+                        <div class="vehicle-specs">
+                            <span>CVT</span>
+                            <span>Petrol</span>
+                            <span>38,000 km</span>
+                        </div>
+                        <div class="vehicle-pricing">
+                            <span class="weekly-price">From $105/week</span>
+                            <span class="total-price">$32,900</span>
+                        </div>
+                        <button class="btn btn-primary">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 6 -->
+                <div class="vehicle-card-large">
+                    <div class="vehicle-image">
+                        <div class="placeholder-image">2021 Holden Commodore</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2021 Holden Commodore LT</h3>
+                        <div class="vehicle-specs">
+                            <span>Automatic</span>
+                            <span>Petrol</span>
+                            <span>25,000 km</span>
+                        </div>
+                        <div class="vehicle-pricing">
+                            <span class="weekly-price">From $115/week</span>
+                            <span class="total-price">$35,500</span>
+                        </div>
+                        <button class="btn btn-primary">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 7 -->
+                <div class="vehicle-card-large">
+                    <div class="vehicle-image">
+                        <div class="placeholder-image">2018 Toyota Corolla</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2018 Toyota Corolla Ascent</h3>
+                        <div class="vehicle-specs">
+                            <span>Manual</span>
+                            <span>Petrol</span>
+                            <span>68,000 km</span>
+                        </div>
+                        <div class="vehicle-pricing">
+                            <span class="weekly-price">From $55/week</span>
+                            <span class="total-price">$16,900</span>
+                        </div>
+                        <button class="btn btn-primary">Enquire Now</button>
+                    </div>
+                </div>
+
+                <!-- Vehicle Card 8 -->
+                <div class="vehicle-card-large">
+                    <div class="vehicle-image">
+                        <div class="placeholder-image">2023 Honda HR-V</div>
+                    </div>
+                    <div class="vehicle-details">
+                        <h3>2023 Honda HR-V VTi</h3>
+                        <div class="vehicle-specs">
+                            <span>CVT</span>
+                            <span>Petrol</span>
+                            <span>12,000 km</span>
+                        </div>
+                        <div class="vehicle-pricing">
+                            <span class="weekly-price">From $125/week</span>
+                            <span class="total-price">$38,900</span>
+                        </div>
+                        <button class="btn btn-primary">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more">
+                <button class="btn btn-secondary">Load More Vehicles</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Can't Find What You're Looking For?</h2>
+            <p>Let us know what you need and we'll help you find the perfect vehicle</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                <a href="finance.html" class="btn btn-secondary">Get Pre-Approved</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Trackies</h3>
+                    <p>Your trusted car dealership for quality vehicles and flexible finance options.</p>
+                    <p><strong>License #:</strong> MD12345</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="vehicles.html">Vehicles</a></li>
+                        <li><a href="finance.html">Finance</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trackies. All rights reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

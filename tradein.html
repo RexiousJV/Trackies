@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade-In - Trackies</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Trackies</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="vehicles.html" class="nav-link">Vehicles</a>
+                <a href="finance.html" class="nav-link">Finance</a>
+                <a href="service.html" class="nav-link">Service</a>
+                <a href="tradein.html" class="nav-link active">Trade-In</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Trade-In Your Vehicle</h1>
+            <p>Get the best value for your current car</p>
+        </div>
+    </section>
+
+    <!-- Trade-In Process -->
+    <section class="tradein-process">
+        <div class="container">
+            <h2 class="section-title">How Our Trade-In Process Works</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Get Your Quote</h3>
+                        <p>Fill out our online form with your vehicle details and get an instant estimate</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Vehicle Inspection</h3>
+                        <p>Bring your car in for a professional inspection to confirm the final value</p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Instant Payment</h3>
+                        <p>Accept our offer and get paid immediately, or use it towards your next vehicle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="tradein-benefits">
+        <div class="container">
+            <h2 class="section-title">Why Trade-In With Trackies?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Best Market Value</h3>
+                    <p>We offer competitive prices based on current market conditions</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Quick & Easy</h3>
+                    <p>Get your quote in minutes and complete the process in under an hour</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚗</div>
+                    <h3>Any Make or Model</h3>
+                    <p>We accept all makes and models, regardless of age or condition</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">📄</div>
+                    <h3>We Handle Paperwork</h3>
+                    <p>We take care of all the paperwork and transfer documentation</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔄</div>
+                    <h3>Upgrade Options</h3>
+                    <p>Use your trade-in value towards financing your next vehicle</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Safe & Secure</h3>
+                    <p>Licensed dealer with secure payment methods and proper documentation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valuation Form -->
+    <section class="valuation-form-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Get Your Vehicle Valuation</h2>
+                <p>Fill out the form below for an instant estimate of your vehicle's trade-in value</p>
+                
+                <form class="valuation-form" id="tradein-form">
+                    <div class="form-section">
+                        <h3>Vehicle Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="make">Make *</label>
+                                <select id="make" name="make" required>
+                                    <option value="">Select Make</option>
+                                    <option value="toyota">Toyota</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="mazda">Mazda</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="holden">Holden</option>
+                                    <option value="nissan">Nissan</option>
+                                    <option value="hyundai">Hyundai</option>
+                                    <option value="kia">Kia</option>
+                                    <option value="volkswagen">Volkswagen</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="mercedes">Mercedes-Benz</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="model">Model *</label>
+                                <input type="text" id="model" name="model" placeholder="e.g., Camry" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="year">Year *</label>
+                                <select id="year" name="year" required>
+                                    <option value="">Select Year</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                    <option value="older">Older than 2010</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="kilometers">Kilometers *</label>
+                                <input type="number" id="kilometers" name="kilometers" placeholder="Current odometer reading" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="transmission">Transmission</label>
+                                <select id="transmission" name="transmission">
+                                    <option value="">Select Transmission</option>
+                                    <option value="automatic">Automatic</option>
+                                    <option value="manual">Manual</option>
+                                    <option value="cvt">CVT</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fuel">Fuel Type</label>
+                                <select id="fuel" name="fuel">
+                                    <option value="">Select Fuel Type</option>
+                                    <option value="petrol">Petrol</option>
+                                    <option value="diesel">Diesel</option>
+                                    <option value="hybrid">Hybrid</option>
+                                    <option value="electric">Electric</option>
+                                    <option value="lpg">LPG</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Vehicle Condition</h3>
+                        <div class="form-group">
+                            <label for="condition">Overall Condition *</label>
+                            <select id="condition" name="condition" required>
+                                <option value="">Select Condition</option>
+                                <option value="excellent">Excellent - Like new, no visible wear</option>
+                                <option value="very-good">Very Good - Minor wear, well maintained</option>
+                                <option value="good">Good - Some wear, regular maintenance</option>
+                                <option value="fair">Fair - Noticeable wear, needs some work</option>
+                                <option value="poor">Poor - Significant wear, needs major work</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-history">Service History</label>
+                            <select id="service-history" name="service-history">
+                                <option value="">Select Service History</option>
+                                <option value="full">Full service history</option>
+                                <option value="partial">Partial service history</option>
+                                <option value="none">No service history</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="issues">Known Issues or Damage</label>
+                            <textarea id="issues" name="issues" rows="4" placeholder="Describe any mechanical issues, accident damage, or other concerns..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Photo Upload</h3>
+                        <div class="form-group">
+                            <label for="photos">Upload Photos (Optional)</label>
+                            <input type="file" id="photos" name="photos" multiple accept="image/*">
+                            <p class="form-help">Upload photos of your vehicle (exterior, interior, any damage) to get a more accurate valuation</p>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Contact Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" name="location" placeholder="Suburb/City">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Additional Information</h3>
+                        <div class="form-group">
+                            <label for="timeline">When are you looking to sell?</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select Timeline</option>
+                                <option value="immediately">Immediately</option>
+                                <option value="within-week">Within a week</option>
+                                <option value="within-month">Within a month</option>
+                                <option value="just-looking">Just looking for a quote</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comments">Additional Comments</label>
+                            <textarea id="comments" name="comments" rows="3" placeholder="Any additional information about your vehicle..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">Get My Valuation</button>
+                        <p class="form-note">* Required fields. We'll contact you with your valuation within 24 hours.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Trade-In FAQ</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How accurate is the online valuation?</h3>
+                    <p>Our online valuation gives you a good estimate, but the final value is determined after a physical inspection of your vehicle.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you buy cars that don't run?</h3>
+                    <p>Yes, we buy vehicles in all conditions. Even if your car doesn't run, it may still have value for parts or scrap.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What documents do I need?</h3>
+                    <p>You'll need your vehicle registration, driver's license, and any service records or documentation you have.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I use the trade-in value for finance?</h3>
+                    <p>Absolutely! Your trade-in value can be used as a deposit or to reduce the amount you need to finance for your next vehicle.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How long does the process take?</h3>
+                    <p>Once you bring your vehicle in, the inspection and paperwork typically takes 30-60 minutes to complete.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is there any obligation?</h3>
+                    <p>No obligation at all. Get your quote and decide if you want to proceed. You're free to walk away at any time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Trade-In Your Vehicle?</h2>
+            <p>Get started today and see what your car is worth</p>
+            <div class="cta-buttons">
+                <a href="#tradein-form" class="btn btn-primary">Get Valuation</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Trackies</h3>
+                    <p>Your trusted car dealership for quality vehicles and flexible finance options.</p>
+                    <p><strong>License #:</strong> MD12345</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="vehicles.html">Vehicles</a></li>
+                        <li><a href="finance.html">Finance</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Trackies. All rights reserved. | <a href="#">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
